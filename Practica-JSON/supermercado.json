@@ -1,0 +1,257 @@
+{
+    "primerSupermercado": [
+      {
+        "id": 1,
+        "nombre": "Alcampo",
+        "direccion": "Carrer de les Alberedes, 6-12, Pol. Ind, 08830 Salinas, Barcelona",
+        "lugar": "Sant boi de llobregat",
+        "horarioApertura": "De Lunes a Sábado de 9:00 - a 21:00h",
+        "geolocalizacion": [
+          "41°19'57.2 N",
+          "2°03'02.1 E"
+        ],
+        "productos": [
+          {
+            "id": "alcampoUno",
+            "nombre": "Empanada de atún",
+            "seccion": "panaderia",
+            "descripcion": "Empanada de atún",
+            "origen": "España",
+            "oferta": false,
+            "pvp": 4.99,
+            "formato": "625g",
+            "habitual": true,
+            "adquirido": false
+          },
+          {
+            "id": "alcampoDos",
+            "nombre": "Pechuga de pollo",
+            "seccion": "Carnicería",
+            "descripcion": "Bandeja de pechuga de pollo fileteada alcampo producción controlada",
+            "origen": "España",
+            "formato": "500 grs.",
+            "habitual": true,
+            "adquirido": true,
+            "oferta": true,
+            "pvp": 4.75,
+            "pvpRebajado": 4.50,
+            "vigenciaOferta": [
+                "28/03/22",
+                "03/04/22"
+              ]
+          },
+          {
+            "id": "alcampoTres",
+            "nombre": "Papel higiénico",
+            "seccion": "droguería",
+            "descripcion": "Papel higiénico, Original, con toque de algodón",
+            "origen": "España",
+            "oferta": false,
+            "pvp": 4.40,
+            "formato": "16 uds",
+            "habitual": true,
+            "adquirido": false
+          },
+          {
+            "id": "alcampoCuatro",
+            "nombre": "Carabineros grandes",
+            "seccion": "congelados",
+            "descripcion": "Carabineros grandes, crudos y ultracongelados, especiales para plancha",
+            "origen": "España",
+            "formato": "500 grs.",
+            "habitual": false,
+            "adquirido": true,
+            "oferta": true,
+            "pvp": 43.99,
+            "pvpRebajado": 39.50,
+            "vigenciaOferta": [
+                "25/03/22",
+                "01/04/22"
+              ]
+          },
+          {
+            "id": "alcampoCinco",
+            "nombre": "Jamón de cebo",
+            "seccion": "Charcutería",
+            "descripcion": "Jamón de cebo de campo ibérico (50% raza ibérica), cortado en lonchas",
+            "origen": "España",
+            "oferta": false,
+            "pvp": 14.55,
+            "formato": "150 grs.",
+            "habitual": false,
+            "adquirido": true
+          }
+        ]
+      }
+    ],
+    "segundoSupermercado": [
+      {
+        "id": 2,
+        "nombre": "Aldi",
+        "direccion": "Passeig de Can Feu, 123, 08205 Sabadell, Barcelona",
+        "geolocalizacion": [
+          "41°32'23.9 N",
+          "2°05'41.1 E"
+        ],
+        "lugar": "Sabadell",
+        "horarioApertura": "Lunes a Sábado de 9:00 - 21:00h",
+        "productos": [
+          {
+            "id": "aldiUno",
+            "nombre": "Mix pimientos picantes",
+            "seccion": "frutería",
+            "descripcion": "Mix pimientos picantes",
+            "origen": "Marruecos",
+            "oferta": false,
+            "pvp": 1.25,
+            "formato": "150 grs.",
+            "habitual": false,
+            "adquirido": true
+          },
+          {
+            "id": "aldiDos",
+            "nombre": "Trenza maple pecan",
+            "seccion": "panadería",
+            "descripcion": "Trenza mpale pecan",
+            "origen": "España",
+            "formato": "85 g",
+            "habitual": true,
+            "adquirido": true,
+            "oferta": true,
+            "pvp": 0.59,
+            "pvpRebajado": 0.49,
+            "vigenciaOferta": [
+                "30/03/22",
+                "06/04/22"
+              ]
+          },
+          {
+            "id": "aldiTres",
+            "nombre": "Aceite de girasol",
+            "seccion": "conservas",
+            "descripcion": "Aceite refinado de girasol",
+            "origen": "España",
+            "formato": "1 l",
+            "habitual": false,
+            "adquirido": true,
+            "oferta": true,
+            "pvp": 5.75,
+            "pvpRebajado": 5.20,
+            "vigenciaOferta": [
+                "28/03/22",
+                "01/04/22"
+              ]
+          },
+          {
+            "id": "aldiCuatro",
+            "nombre": "Pera",
+            "seccion": "frutería",
+            "descripcion": "Pera",
+            "origen": "Holanda",
+            "oferta": false,
+            "pvp": 1.79,
+            "formato": "A granel",
+            "habitual": false,
+            "adquirido": false
+          },
+          {
+            "id": "aldiCinco",
+            "nombre": "Atún claro",
+            "seccion": "conservas",
+            "descripcion": "Atún claro en aceite de oliva",
+            "origen": "España",
+            "oferta": false,
+            "pvp": 3.50,
+            "formato": "pack de 4 x 52 g ",
+            "habitual": true,
+            "adquirido": true
+          }
+        ]
+      }
+    ],
+    "tercerSupermercado": [
+      {
+        "id": 3,
+        "nombre": "Mercadona",
+        "direccion": "Carrer de Viladomat, 195-198, 08205 Sabadell, Barcelona",
+        "geolocalizacion": [
+          "41°32'16.3 N",
+          "2°06'09.5 E"
+        ],
+        "lugar": "Sabadell",
+        "horarioApertura": "De Lunes a Sábado de 9:30 - 21:00h",
+        "productos": [
+          {
+            "id": "mercadonaUno",
+            "nombre": "Huevo de chocolate con leche",
+            "seccion": "Panadería",
+            "descripcion": "Huevo de chocolate con leche con sorpresa",
+            "origen": "Italia",
+            "formato": "50 gr",
+            "habitual": false,
+            "adquirido": false,
+            "oferta": true,
+            "pvp": 2.75,
+            "pvpRebajado": 1.99,
+            "vigenciaOferta": [
+                "01/04/22",
+                "03/04/22"
+              ]
+          },
+          {
+            "id": "mercadonaDos",
+            "nombre": "cabrito chuletas",
+            "seccion": "carniceria",
+            "descripcion": "Chuletas de cabrito",
+            "origen": "España",
+            "oferta": false,
+            "pvp": 13.50,
+            "formato": "450 g",
+            "habitual": true,
+            "adquirido": true
+          },
+          {
+            "id": "mercadonaTres",
+            "nombre": "Arroz especial risotto",
+            "seccion": "pastas y arroces",
+            "descripcion": "Arroz especial risotto",
+            "origen": "España",
+            "oferta": false,
+            "pvp": 2.25,
+            "formato": "1 kg.",
+            "habitual": true,
+            "adquirido": false
+          },
+          {
+            "id": "mercadonaCuatro",
+            "nombre": "Ketchup",
+            "seccion": "salsas y condimentos",
+            "descripcion": "Ketchup monodosis",
+            "origen": "España",
+            "oferta": false,
+            "pvp": 1.65,
+            "formato": "12 x 20 gr",
+            "habitual": true,
+            "adquirido": false
+          },
+          {
+            "id": "mercadonaCinco",
+            "nombre": "Arandanos enteros",
+            "seccion": "congelado",
+            "descripcion": "Arandanos enteros congelados",
+            "origen": "Bélgica",
+            "formato": "300g",
+            "habitual": false,
+            "adquirido": true,
+            "oferta": true,
+            "pvp": 2.75,
+            "pvpRebajado": 1.99,
+            "vigenciaOferta": [
+                "01/04/22",
+                "06/04/22"
+              ]
+          }
+        ]
+      }
+    ]
+  }
