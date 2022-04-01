@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <root>
+     <segundoSupermercado>
+         <id>2</id>
+         <nombre>Aldi</nombre>
+         <direccion>Passeig de Can Feu, 123, 08205 Sabadell, Barcelona</direccion>
+         <geolocalizacion>41°32'23.9 N</geolocalizacion>
+         <geolocalizacion>2°05'41.1 E</geolocalizacion>
+         <lugar>Sabadell</lugar>
+         <horarioApertura>Lunes a Sábado de 9:00 - 21:00h</horarioApertura>
+         <productos>
+             <id>aldiUno</id>
+             <nombre>Mix pimientos picantes</nombre>
+             <seccion>frutería</seccion>
+             <descripcion>Mix pimientos picantes</descripcion>
+             <origen>Marruecos</origen>
+             <oferta>false</oferta>
+             <pvp>1.25</pvp>
+             <formato>150 grs.</formato>
+             <habitual>false</habitual>
+             <adquirido>true</adquirido>
+         </productos>
+         <productos>
+             <id>aldiDos</id>
+             <nombre>Trenza maple pecan</nombre>
+             <seccion>panadería</seccion>
+             <descripcion>Trenza mpale pecan</descripcion>
+             <origen>España</origen>
+             <formato>85 g</formato>
+             <habitual>true</habitual>
+             <adquirido>true</adquirido>
+             <oferta>true</oferta>
+             <pvp>0.59</pvp>
+             <pvpRebajado>0.49</pvpRebajado>
+             <vigenciaOferta>30/03/22</vigenciaOferta>
+             <vigenciaOferta>06/04/22</vigenciaOferta>
+         </productos>
+         <productos>
+             <id>aldiTres</id>
+             <nombre>Aceite de girasol</nombre>
+             <seccion>conservas</seccion>
+             <descripcion>Aceite refinado de girasol</descripcion>
+             <origen>España</origen>
+             <formato>1 l</formato>
+             <habitual>false</habitual>
+             <adquirido>true</adquirido>
+             <oferta>true</oferta>
+             <pvp>5.75</pvp>
+             <pvpRebajado>5.2</pvpRebajado>
+             <vigenciaOferta>28/03/22</vigenciaOferta>
+             <vigenciaOferta>01/04/22</vigenciaOferta>
+         </productos>
+         <productos>
+             <id>aldiCuatro</id>
+             <nombre>Pera</nombre>
+             <seccion>frutería</seccion>
+             <descripcion>Pera</descripcion>
+             <origen>Holanda</origen>
+             <oferta>false</oferta>
+             <pvp>1.79</pvp>
+             <formato>A granel</formato>
+             <habitual>false</habitual>
+             <adquirido>false</adquirido>
+         </productos>
+         <productos>
+             <id>aldiCinco</id>
+             <nombre>Atún claro</nombre>
+             <seccion>conservas</seccion>
+             <descripcion>Atún claro en aceite de oliva</descripcion>
+             <origen>España</origen>
+             <oferta>false</oferta>
+             <pvp>3.5</pvp>
+             <formato>pack de 4 x 52 g </formato>
+             <habitual>true</habitual>
+             <adquirido>true</adquirido>
+         </productos>
+     </segundoSupermercado>
+ </root>
