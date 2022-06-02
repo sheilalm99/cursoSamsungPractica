@@ -1,0 +1,164 @@
+<div class="container mt-4 ">
+  <div class="row">
+    <div class="col-sm-9">
+      <h1 class="text-center">{{title}}</h1>
+    </div>
+    <div class="col-sm-3">
+      <div class="alert alert-success alert-dimissable" *ngIf="msg" role="alert">
+        {{msg}}
+        <a href="#" class="close" (click)="closeAlert()">&times;</a>
+      </div>
+      <div class="alert alert-danger alert-dimissable" *ngIf="msg2" role="alert">
+        {{msg2}}
+        <a href="#" class="close" (click)="closeAlert()">&times;</a>
+      </div>
+    </div>
+  </div>
+
+ <div class="row">
+  <div class="col-sm-12 mb-5">
+    <h2>Crear Socio</h2>
+    <form>
+      <div class="form-group row mb-3">
+        <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+        <div class="col-sm-10">
+          <input type="text" id="nombre" name="nombre" minlength="3" required [ngModelOptions]="{standalone: true}" [(ngModel)]="model.nombre" placeholder="Nombre" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row mb-3">
+        <label for="apellido" class="col-sm-2 col-form-label">Apellidos</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="apellido" name="apellido" minlength="3" [ngModelOptions]="{standalone: true}" [(ngModel)]="model.apellido" placeholder="Apellidos" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row mb-3">
+        <label for="socio" class="col-sm-2 col-form-label">Nº Socio</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="socio" name="socio" min="0" max="125" [ngModelOptions]="{standalone: true}" [(ngModel)]="model.socio" placeholder="Socio" class="form-control">
+        </div>
+      </div>
+      
+      <div class="form-group row mb-3">
+        <label for="dni" class="col-sm-2 col-form-label">Dni</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="dni" name="dni" [(ngModel)]="model.dni" pattern="^[0-9]{8,8}[A-Za-z]$" [ngModelOptions]="{standalone: true}" placeholder="Dni" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row mb-3">
+        <label for="telf" class="col-sm-2 col-form-label">Teléfono</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="telf" name="telf" [(ngModel)]="model.telf" maxlength="9"  [ngModelOptions]="{standalone: true}" placeholder="Teléfono" class="form-control">
+        </div>
+      </div>
+     
+
+      <div class="form-group row mb-3">
+        <div class="col-sm-2">Sexo</div>
+        <div class="col-sm-10">
+          <mat-radio-group aria-label="Select an option" [ngModelOptions]="{standalone: true}"
+          [(ngModel)]="model.sexo">
+          <mat-radio-button value="Hombre"> Hombre</mat-radio-button>
+          <mat-radio-button value="Mujer"> Mujer</mat-radio-button>
+        </mat-radio-group>
+        </div>
+       
+      </div>
+      <div class="form-group row">
+        <div class="col-md-12 text-center">
+          <button type="submit" class="btn btn-success" (click)="addPerson()">Registrarme!</button>
+        </div>
+      </div>
+    </form>
+  </div>  
+  <hr>
+</div>
+
+<div class="row mt-4">
+  <div class="col-sm-12">
+<table class="table table-hover">
+  <thead>
+    <tr>
+     
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellidos</th>
+      <th scope="col">Socio</th>
+      <th scope="col">Dni</th>
+      <th scope="col">Teléfono</th>
+      <th scope="col">Sexo</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr *ngFor="let personas of socios; let i = index">
+
+      <td>{{personas.nombre}}</td>
+      <td>{{personas.apellido}}</td>
+      <td>{{personas.socio}}</td>
+      <td>{{personas.dni}}</td>
+      <td>{{personas.telf}}</td>
+      <td>{{personas.sexo}}</td>
+      
+      <td><a (click)="editPerson(i)" mat-flat-button mr-5 color="primary">Editar</a>  &nbsp;
+          <a (click)="deletePerson(i)" mat-flat-button color="warn" >Borrar</a></td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+<div class="col-sm-8 mb-5" [hidden]="hideUpdate">
+  <h2>Actualizar Persona</h2>
+  <form>
+    <div class="form-group row mb-3">
+      <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="model2.nombre" minlength="5" [ngModelOptions]="{standalone: true}" placeholder="Nombre" required="required">
+      </div>
+     
+    </div>
+    <div class="form-group row mb-3">
+      <label for="apellido" class="col-sm-2 col-form-label">Apellidos</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="model2.apellido" minlength="3" [ngModelOptions]="{standalone: true}" placeholder="Apellidos">
+      </div>
+    </div>
+    <div class="form-group row mb-3">
+      <label for="socio" class="col-sm-2 col-form-label">Socio</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" id="socio" name="socio" [disabled]="true" [(ngModel)]="model2.socio"  min="0" max="125" [ngModelOptions]="{standalone: true}"  placeholder="Socio"> 
+      </div>
+    </div>
+    
+    <div class="form-group row mb-3">
+      <label for="dni" class="col-sm-2 col-form-label">Dni</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="dni" name="dni" [(ngModel)]="model2.dni" pattern="^[0-9]{8,8}[A-Za-z]$" [ngModelOptions]="{standalone: true}" placeholder="Dni">
+      </div>
+    </div>
+    <div class="form-group row mb-3">
+      <label for="telf" class="col-sm-2 col-form-label">Teléfono</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" id="telf" name="telf" [(ngModel)]="model2.telf" placeholder="Teléfono">
+      </div>
+    </div>
+  
+    <div class="form-group row mb-3">
+      <div class="col-sm-2">Sexo</div>
+      <div class="col-sm-10">
+        <mat-radio-group aria-label="Select an option" [ngModelOptions]="{standalone: true}"
+        [(ngModel)]="model2.sexo">
+        <mat-radio-button value="Hombre"> Hombre </mat-radio-button>
+        <mat-radio-button value="Mujer"> Mujer</mat-radio-button>
+      </mat-radio-group>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-md-12 text-center">
+        <button type="submit" class="btn btn-success" (click)="updatePerson()">Actualizame!</button>
+      </div>
+    </div>
+  </form>
+</div>  
+</div>
+</div>
+
